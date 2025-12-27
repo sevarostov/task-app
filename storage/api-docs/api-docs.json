@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Task-app",
+        "description": "This is an awesome app!",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/tasks/create": {
+            "post": {
+                "summary": "Creating a new resource.",
+                "operationId": "5c14e961b38a29c508fc76712c428e24",
+                "requestBody": {
+                    "description": "fields to create",
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "title",
+                                    "status"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "type": "string",
+                                        "example": "Название"
+                                    },
+                                    "description": {
+                                        "type": "string",
+                                        "example": "Описание"
+                                    },
+                                    "status": {
+                                        "type": "string",
+                                        "example": "new"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Успешно"
+                    },
+                    "400": {
+                        "description": "Ошибка"
+                    }
+                }
+            }
+        }
+    },
+    "tags": []
+}
