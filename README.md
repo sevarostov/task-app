@@ -22,9 +22,9 @@
 ### 3. Building project with docker
 
   ```sh
-    docker build -t php:latest --file ./docker/Dockerfile --target php ./docker
-    docker compose exec php composer install
-    docker compose up -d
+  docker build -t php:latest --file ./docker/Dockerfile --target php ./docker
+  docker compose exec php composer install
+  docker compose up -d
   ```
 
 ### 4. Running migrations
