@@ -1,9 +1,9 @@
 ## REST API for task app
 
 ## Technical Requirements
-- Git
-- Docker
-- Docker Compose
+  [Git](https://git-scm.com)
+  [Docker](https://www.docker.com)
+  [Docker Compose](https://docs.docker.com/compose/)
 
 ## Settings & Installation
 
