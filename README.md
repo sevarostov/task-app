@@ -29,13 +29,13 @@
 
 ### 4. Running migrations
 
-    ```
+    ```sh
     docker exec php php artisan migrate
     ``` 
 
 ## 5. Seeding test data
 
-    ```
+    ```sh
     docker exec php php artisan db:seed
     ```
 
